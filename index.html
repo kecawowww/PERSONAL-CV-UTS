@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kesya Fathin Syahreza | Personal CV Online</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <div class="decor-layer" aria-hidden="true">
+    <span class="float-shape shape-1"></span>
+    <span class="float-shape shape-2"></span>
+    <span class="float-shape shape-3"></span>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <nav class="nav-shell" aria-label="Navigasi utama">
+      <a href="#home" class="logo">kesya</a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#works" class="nav-link">Works</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="round-btn" id="themeToggle" type="button" aria-label="Ubah mode warna">☾</button>
+        <button class="round-btn menu-toggle" id="menuToggle" type="button" aria-label="Buka menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="section-ribbon" aria-label="Pengelompokan section">
+    <span class="viewing-label">Currently Viewing: <strong id="currentSectionText">Home</strong></span>
+    <a href="#about" class="ribbon-link">About</a>
+    <a href="#skills" class="ribbon-link">Skills</a>
+    <a href="#journey" class="ribbon-link">Journey</a>
+    <a href="#works" class="ribbon-link">Works</a>
+    <a href="#contact" class="ribbon-link">Contact</a>
+  </div>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow hero-reveal hero-delay-1">
+            <span class="spark"></span>
+            Personal CV Online
+          </div>
+
+          <h1 class="hero-reveal hero-delay-2">
+            Hello, I am
+            <span class="name-block gradient-text">KESYA FATHIN SYAHREZA</span>
+          </h1>
+
+          <div class="role hero-reveal hero-delay-3">
+            <span id="roleTyping"></span><span class="typing-caret" aria-hidden="true"></span>
+          </div>
+
+          <p class="hero-desc hero-reveal hero-delay-4">
+            Mahasiswa Sistem Informasi yang tertarik pada pengembangan sistem digital, desain antarmuka,
+            analisis data, dan manajemen proyek teknologi. Saya memiliki karakter teliti, komunikatif,
+            mudah beradaptasi, serta senang mempelajari solusi digital yang dapat membantu pekerjaan
+            menjadi lebih efektif dan terstruktur.
+          </p>
+
+          <div class="hero-buttons hero-reveal hero-delay-5">
+            <a href="#works" class="btn btn-primary">Lihat Works <span class="btn-arrow">→</span></a>
+            <a href="#contact" class="btn btn-secondary">Contact Me <span class="btn-arrow">→</span></a>
+          </div>
+        </div>
+
+        <aside class="photo-card glass">
+          <div class="photo-frame">
+            <div class="photo-preview" id="photoPreview">
+            <div class="photo-caption">
+              <h3>Tempat Foto CV Kesya</h3>
+              <p>Gunakan foto formal atau semi-formal agar tampilan CV terlihat profesional.</p>
+              <label for="photoUpload" class="upload-label">Upload Foto CV</label>
+              <input class="photo-input" id="photoUpload" type="file" accept="image/*">
+            </div>
+          </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-title reveal">
+          <div>
+            <small>About Me</small>
+          </div>
+          
+        </div>
+
+        <div class="about-grid">
+          <aside class="about-side glass reveal">
+            <h3 class="classic-title gradient-text">Kesya at a Glance</h3>
+            <p>
+              Saya membangun identitas sebagai mahasiswa Sistem Informasi yang memadukan kemampuan teknologi,
+              komunikasi, dan pemahaman kebutuhan pengguna.
+            </p>
+
+            <div class="mini-stats">
+              <div class="mini-stat">
+                <strong>4</strong>
+                <span>Prestasi dan pengalaman utama</span>
+              </div>
+              <div class="mini-stat">
+                <strong>8+</strong>
+                <span>Soft skill pendukung</span>
+              </div>
+              <div class="mini-stat">
+                <strong>SI</strong>
+                <span>Fokus sistem informasi dan digital business</span>
+              </div>
+            </div>
+          </aside>
+
+          <article class="about-text glass reveal">
+            <p>
+              Saya adalah mahasiswa Sistem Informasi yang memiliki ketertarikan pada bagaimana teknologi
+              dapat digunakan untuk menyelesaikan masalah nyata, terutama dalam bidang pengelolaan data,
+              desain pengalaman pengguna, dan pengembangan sistem berbasis web. Bagi saya, sistem yang baik
+              bukan hanya sistem yang berjalan, tetapi juga sistem yang mudah dipahami, rapi, efisien,
+              dan sesuai dengan kebutuhan penggunanya.
+            </p>
+
+            <p>
+              Dalam proses belajar, saya terbiasa bekerja secara terstruktur, mulai dari memahami masalah,
+              menyusun ide, membuat rancangan awal, mengatur prioritas, hingga mengevaluasi hasil pekerjaan.
+              Saya juga berusaha menjaga kualitas komunikasi saat bekerja dalam tim, karena proyek teknologi
+              biasanya membutuhkan kolaborasi antara banyak peran, seperti analis, desainer, developer,
+              dan pengguna akhir.
+            </p>
+
+            <p>
+              Soft skills yang saya miliki meliputi kemampuan komunikasi, problem solving, manajemen waktu,
+              critical thinking, adaptasi, kreativitas, ketelitian, kepemimpinan dasar, dan kemampuan
+              menyampaikan ide secara jelas. Saya juga memiliki minat pada UI/UX design, business process,
+              data visualization, project documentation, dan pengembangan website sederhana menggunakan
+              HTML, CSS, serta JavaScript.
+            </p>
+
+            <p>
+              Ke depan, saya ingin mengembangkan diri sebagai talenta digital yang mampu menghubungkan aspek
+              teknis dan kebutuhan bisnis. Saya ingin terlibat dalam proyek yang berdampak, baik dalam bentuk
+              sistem informasi, aplikasi web, dashboard, maupun solusi digital yang membantu organisasi
+              bekerja lebih cepat, akurat, dan profesional.
+            </p>
+
+            <div class="highlight-chips" aria-label="Highlight keahlian utama">
+              <span class="highlight-chip">System Analysis</span>
+              <span class="highlight-chip">UI/UX Design</span>
+              <span class="highlight-chip">Data Management</span>
+              <span class="highlight-chip">Project Documentation</span>
+              <span class="highlight-chip">Digital Business</span>
+            </div>
+
+            <div class="about-highlight">
+              Fokus utama saya adalah menjadi pribadi yang adaptif, analitis, kreatif, dan mampu bekerja
+              secara profesional dalam lingkungan teknologi yang terus berkembang.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-title reveal">
+          <div>
+            <small>Skills</small>
+          </div>
+          
+        </div>
+
+        <div class="skills-layout">
+          <div class="skill-card glass reveal">
+            <h3>Technical Skills</h3>
+
+            <div class="skill">
+              <div class="skill-head">
+                <span>HTML, CSS, JavaScript</span>
+                <span class="skill-percent" data-target="86">0%</span>
+              </div>
+              <div class="progress"><span data-width="86%"></span></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-head">
+                <span>UI/UX Design</span>
+                <span class="skill-percent" data-target="84">0%</span>
+              </div>
+              <div class="progress"><span data-width="84%"></span></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-head">
+                <span>Database & Data Management</span>
+                <span class="skill-percent" data-target="78">0%</span>
+              </div>
+              <div class="progress"><span data-width="78%"></span></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-head">
+                <span>System Analysis</span>
+                <span class="skill-percent" data-target="82">0%</span>
+              </div>
+              <div class="progress"><span data-width="82%"></span></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass reveal">
+            <h3>Soft Skills</h3>
+            <div class="tag-cloud">
+              <span class="tag">Communication</span>
+              <span class="tag">Problem Solving</span>
+              <span class="tag">Leadership</span>
+              <span class="tag">Teamwork</span>
+              <span class="tag">Creative Thinking</span>
+              <span class="tag">Time Management</span>
+              <span class="tag">Adaptability</span>
+              <span class="tag">Public Speaking</span>
+              <span class="tag">Attention to Detail</span>
+              <span class="tag">Project Planning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-title reveal">
+          <div>
+            <small>Journey</small>
+          </div>
+          
+        </div>
+
+        <div class="journey-list stagger reveal">
+          <article class="journey-item">
+            <span class="journey-dot"></span>
+            <div class="journey-card glass">
+              <time>2025 — Sekarang</time>
+              <h3>Korea University — Bachelor of Information Systems & Digital Business</h3>
+              <p>
+                Mempelajari dasar sistem informasi, analisis proses bisnis, manajemen data, desain antarmuka,
+                pengembangan web, dan transformasi digital dalam organisasi modern.
+              </p>
+            </div>
+          </article>
+
+          <article class="journey-item">
+            <span class="journey-dot"></span>
+            <div class="journey-card glass">
+              <time>2024</time>
+              <h3>UI/UX Mini Project — Student Academic Dashboard</h3>
+              <p>
+                Membuat rancangan dashboard akademik untuk membantu mahasiswa melihat jadwal, tugas,
+                progress belajar, dan informasi kampus secara lebih terstruktur.
+              </p>
+            </div>
+          </article>
+
+          <article class="journey-item">
+            <span class="journey-dot"></span>
+            <div class="journey-card glass">
+              <time>2023</time>
+              <h3>Digital Team Coordinator — Campus Creative Project</h3>
+              <p>
+                Berperan dalam koordinasi tim kecil, pembagian tugas konten digital, penyusunan timeline,
+                serta evaluasi hasil publikasi agar pekerjaan lebih rapi dan konsisten.
+              </p>
+            </div>
+          </article>
+
+          <article class="journey-item">
+            <span class="journey-dot"></span>
+            <div class="journey-card glass">
+              <time>2022</time>
+              <h3>Web Design Competition Finalist</h3>
+              <p>
+                Menjadi finalis kompetisi desain web tingkat pelajar/mahasiswa dengan konsep website
+                portofolio personal yang menonjolkan estetika, struktur informasi, dan responsivitas.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="works">
+      <div class="container">
+        <div class="section-title reveal">
+          <div>
+            <small>Works</small>
+          </div>
+          
+        </div>
+
+        <div class="works-grid stagger reveal">
+          
+          <article class="work-card" tabindex="0" aria-label="Personal Portfolio Website">
+            <div class="work-card-inner">
+              <div class="work-card-front">
+                <div class="work-icon">💻</div>
+                <h3>Personal Portfolio Website</h3>
+                <p>Website CV online dengan halaman profil, skills, journey, works, dan contact yang responsif.</p>
+                <span class="flip-hint">Hover / Click to flip</span>
+              </div>
+
+              <div class="work-card-back">
+                <div>
+                  <h3>Personal Portfolio Website</h3>
+                  <p>Proyek personal branding berbasis HTML, CSS, dan JavaScript murni dengan tema klasik elegan.</p>
+                  <ul>
+                    <li>Responsive layout</li><li>Aurora hero section</li><li>Interactive navigation</li>
+                  </ul>
+                </div>
+                <a href="#contact" class="work-link">Discuss this work <span>→</span></a>
+                <span class="flip-hint">Click to return</span>
+              </div>
+            </div>
+          </article>
+          <article class="work-card" tabindex="0" aria-label="Student Data Dashboard">
+            <div class="work-card-inner">
+              <div class="work-card-front">
+                <div class="work-icon">📊</div>
+                <h3>Student Data Dashboard</h3>
+                <p>Konsep dashboard untuk menampilkan data akademik, ringkasan aktivitas, dan visualisasi sederhana.</p>
+                <span class="flip-hint">Hover / Click to flip</span>
+              </div>
+
+              <div class="work-card-back">
+                <div>
+                  <h3>Student Data Dashboard</h3>
+                  <p>Dashboard dirancang untuk membantu pengguna membaca informasi akademik secara cepat dan terstruktur.</p>
+                  <ul>
+                    <li>Ringkasan data</li><li>Visual hierarchy</li><li>User-friendly layout</li>
+                  </ul>
+                </div>
+                <a href="#contact" class="work-link">Discuss this work <span>→</span></a>
+                <span class="flip-hint">Click to return</span>
+              </div>
+            </div>
+          </article>
+          <article class="work-card" tabindex="0" aria-label="UI/UX Case Study">
+            <div class="work-card-inner">
+              <div class="work-card-front">
+                <div class="work-icon">🎨</div>
+                <h3>UI/UX Case Study</h3>
+                <p>Rancangan aplikasi produktivitas mahasiswa dengan fokus pada kemudahan navigasi dan tampilan clean.</p>
+                <span class="flip-hint">Hover / Click to flip</span>
+              </div>
+
+              <div class="work-card-back">
+                <div>
+                  <h3>UI/UX Case Study</h3>
+                  <p>Studi kasus UI/UX yang menekankan kebutuhan pengguna, alur penggunaan, dan tampilan modern.</p>
+                  <ul>
+                    <li>User flow</li><li>Wireframe concept</li><li>Clean interface</li>
+                  </ul>
+                </div>
+                <a href="#contact" class="work-link">Discuss this work <span>→</span></a>
+                <span class="flip-hint">Click to return</span>
+              </div>
+            </div>
+          </article>
+          <article class="work-card" tabindex="0" aria-label="Creative Digital Award">
+            <div class="work-card-inner">
+              <div class="work-card-front">
+                <div class="work-icon">🏆</div>
+                <h3>Creative Digital Award</h3>
+                <p>Penghargaan fiktif untuk kontribusi dalam proyek digital kreatif, dokumentasi, dan koordinasi tim.</p>
+                <span class="flip-hint">Hover / Click to flip</span>
+              </div>
+
+              <div class="work-card-back">
+                <div>
+                  <h3>Creative Digital Award</h3>
+                  <p>Pengalaman yang menunjukkan kemampuan koordinasi, komunikasi, dan eksekusi ide digital kreatif.</p>
+                  <ul>
+                    <li>Team coordination</li><li>Creative planning</li><li>Digital documentation</li>
+                  </ul>
+                </div>
+                <a href="#contact" class="work-link">Discuss this work <span>→</span></a>
+                <span class="flip-hint">Click to return</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-title reveal">
+          <div>
+            <small>Contact</small>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <aside class="contact-info glass reveal">
+            <h3>Contact Information</h3>
+            
+
+            <ul class="contact-list">
+              <li>
+                <strong>Email</strong>
+                kesia.syahreza24@student.uisi.ac.id
+              </li>
+              <li>
+                <strong>Location</strong>
+                Surabaya / Indonesia
+              </li>
+              <li>
+                <strong>LinkedIn</strong>
+                linkedin.com/in/kesyafathin
+              </li>
+              <li>
+                <strong>Instagram</strong>
+                @keyysyahreza
+              </li>
+            </ul>
+          </aside>
+
+          <form class="contact-form glass reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Nama</label>
+                <input type="text" id="name" placeholder="Masukkan nama">
+                <small class="error-text">Nama minimal 3 karakter.</small>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="email@contoh.com">
+                <small class="error-text">Email belum valid.</small>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Pesan</label>
+              <textarea id="message" rows="5" placeholder="Tulis pesan singkat..."></textarea>
+              <small class="error-text">Pesan minimal 10 karakter.</small>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Kesya Fathin Syahreza. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</a>
+
+  <div class="toast" id="toast">Pesan berhasil divalidasi. Form ini belum terhubung ke server.</div>
+  <script src="script.js"></script>
+</body>
+</html>
